@@ -8,7 +8,7 @@
 	src: url('css/fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
 	url('css/fonts/Circe-Regular.woff') format('woff'),
 	url('css/fonts/Circe-Regular.ttf') format('truetype');
-	src: local('Circe Regular'), local('Circe Regular'), url('css/fonts/Circe-Regular.woff') format('woff2');
+	/*src: local('Circe Regular'), local('Circe Regular'), url('css/fonts/Circe-Regular.woff') format('woff2');*/
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
