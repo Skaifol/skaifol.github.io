@@ -82,8 +82,8 @@
 	color: #fff;
 	font-weight: bold;
 	display: flex;
-  justify-content: center;
-  align-items: center;
+        justify-content: center;
+        align-items: center;
 	width: 170px;
 	height: 45px;
 	border-radius: 34px;
@@ -111,7 +111,7 @@
 }
 
 .hero h1 {
-	font-family: 'Roboto Slab Bold', sans-serif;
+    font-family: 'Roboto Slab Bold', sans-serif;
     font-size: 57px;
     color: #001e28;
     font-weight: 600;
@@ -120,7 +120,7 @@
 }
 
 .hero h2 {
-	font-family: 'Roboto Slab Bold';
+    font-family: 'Roboto Slab Bold';
     font-size: 30px;
     color: #00222d;
     font-weight: 900;
