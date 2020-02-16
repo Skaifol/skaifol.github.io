@@ -122,7 +122,7 @@ var multiItemSlider = (function () {
   }
 }());
 
-var slider = multiItemSlider('.slider') 
+var slider = multiItemSlider('.slider')
 
 $(document).ready(function () {
   $('.ant-carousel-list').slick({
@@ -133,8 +133,9 @@ $(document).ready(function () {
   });
 });
 
+/*========== mask input ===========*/
 $(document).ready(function () {
-        $("#phone").mask("+7 (999) 999 99 99");
-        $("#phone2").mask("+7 (999) 999 99 99");
-        $("#phone3").mask("+7 (999) 999 99 99")
+  $("#phone").mask("+7 (999) 999 99 99");
+  $("#phone2").mask("+7 (999) 999 99 99");
+  $("#phone3").mask("+7 (999) 999 99 99");
 });
