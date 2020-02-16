@@ -10,7 +10,6 @@
 	url('css/fonts/Circe-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
@@ -21,7 +20,6 @@
 	url('css/fonts/Circe-Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
@@ -32,7 +30,6 @@
 	url('css/fonts/Circe-Light.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 
 @font-face {
@@ -43,7 +40,6 @@
 	url('css/fonts/RobotoSlab-Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 /*============ header ==============*/
 .navbar {
@@ -79,24 +75,32 @@
     color: #001e28;
 }
 
-.navbar-btn button {
+.navbar-btn a {
 	font-family: 'Circe Bold', sans-serif;
 	font-size: 11px;
 	background-color: #ffaf02;
 	color: #fff;
 	font-weight: bold;
+	display: flex;
+  justify-content: center;
+  align-items: center;
 	width: 170px;
 	height: 45px;
 	border-radius: 34px;
 	text-transform: uppercase;
 	margin-top: 37px;
 	border: none;
-	outline: none;
 }
 
-.navbar-btn button:hover {
-  background-color: rgb(255, 157, 2);
-  box-shadow: 0px 3px 10px 0px rgba(255, 157, 2, 0.6);
+.navbar-btn a:hover {
+	background-color: rgb(255, 157, 2);
+	box-shadow: 0px 3px 10px 0px rgba(255, 157, 2, 0.6);
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.navbar-btn button:focus, .consultation button:focus {
+	outline: none;
 }
 
 .hero {
@@ -162,29 +166,30 @@
 	background: url(../img/safe_image2.png) no-repeat center left;
 	background-size: cover;
 	padding-bottom: 92px;
+	overflow: hidden;
 }
 
 .form {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 95px;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 95px;
 }
 
 .form h3 {
 	font-family: 'Roboto Slab Bold', sans-serif;
-    font-size: 30px;
-    color: #001e28;
-    font-weight: bold;
-    text-align: center;
+  font-size: 30px;
+  color: #001e28;
+  font-weight: bold;
+	text-align: center;
 }
 
 .form p {
 	font-family: 'Circe Bold', sans-serif;
-    font-size: 22px;
-    color: #001e28;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 48px;
+  font-size: 22px;
+  color: #001e28;
+  font-weight: bold;
+  text-align: center;
+	margin-bottom: 48px;
 }
 
 .form img {
@@ -192,7 +197,8 @@
 }
 
 .back {
-    width: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
 .back-call-title {
@@ -249,7 +255,6 @@
 	color: #fff;
 	border-radius: 37px;
 	border: none;
-	outline: none;
 }
 
 .consultation button:hover {
@@ -368,6 +373,7 @@
 	padding: 13px;
 	padding-bottom: 23px;
 	position: relative;
+	width: 100%;
 	transition: .3s;
 }
 
@@ -390,8 +396,8 @@
 	background-image: -ms-linear-gradient( 90deg, rgb(0,30,40) 0%, rgba(0,30,40,0) 100%);
 	position: absolute;
 	left: 13px;
-    top: 168px;
-    width: 320px;
+  top: 169px;
+  width: 320px;
 	height: 75px;
 }
 
@@ -409,6 +415,10 @@
     margin-left: -129px;
 	position: absolute;
 	z-index: 1;
+}
+
+.subinformation-img, .subinformation-img-2 {
+	height: 231px;
 }
 
 .mini-information p:nth-child(4) {
@@ -521,11 +531,12 @@
 	background-image: -webkit-linear-gradient( -59deg, rgb(216,240,240) 0%, rgb(253,253,224) 100%);
 	background-image: -ms-linear-gradient( -59deg, rgb(216,240,240) 0%, rgb(253,253,224) 100%);
 	padding-bottom: 100px;
+	overflow: hidden;
 }
 
 .action {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 	align-items: center;
 	margin-top: 96px;
 	width: 100%;
@@ -579,7 +590,6 @@
 	width: 40px;
 	color: #fff;
 	text-align: center;
-	opacity: 0.5;
 	height: 40px;
 	transform: translateY(-50%);
 	background-color: rgb(255, 255, 255, .5);
@@ -691,6 +701,7 @@
 /*=========== social-support ============*/
 #support {
 	padding-bottom: 100px;
+	overflow: hidden;
 }
 
 .social-support-title h2 {
@@ -872,7 +883,7 @@
 
 .team-content-2 {
     display: flex;
-    align-items: end;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -1208,7 +1219,8 @@
 .footer-content {
 	display: flex;
 	flex-direction: column;
-  align-items: flex-end;
+	align-items: flex-end;
+	overflow: hidden;
 }
 
 .footer-content h2 {
@@ -1225,6 +1237,7 @@
 	color: #001e28;
 	font-size: 18px;
 	font-family: 'Circe Regular', sans-serif;
+	margin-top: 40px;
 	font-weight: 400;
 	width: 42%;
 	margin-bottom: 0;
@@ -1296,6 +1309,10 @@
 .mail-1 {
 	line-height: 62px;
 	border-bottom: 2px solid #81928c;
+}
+
+.mail a {
+	display: block;
 }
 
 .mail a:hover {

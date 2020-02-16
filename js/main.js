@@ -132,3 +132,10 @@ $(document).ready(function () {
     nextArrow: "<img src='img/right-arrow-button.png' class='next' alt='2'>",
   });
 });
+
+/*========== mask input ===========*/
+$(document).ready(function () {
+  $("#phone").mask("+7 (999) 999 99 99");
+  $("#phone2").mask("+7 (999) 999 99 99");
+  $("#phone3").mask("+7 (999) 999 99 99");
+});
