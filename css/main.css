@@ -10,6 +10,7 @@
 	url('css/fonts/Circe-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
 	url('css/fonts/Circe-Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -30,6 +32,7 @@
 	url('css/fonts/Circe-Light.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -40,6 +43,7 @@
 	url('css/fonts/RobotoSlab-Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 /*============ header ==============*/
 .navbar {
