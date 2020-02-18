@@ -1021,12 +1021,12 @@
 	width: 93%;
 }
 
-#right-drawn-arrow {
+.right-drawn-arrow, .right-drawn-arrow-2 {
 	position: relative;
 }
 
-#right-drawn-arrow source,
-#right-drawn-arrow img {
+.right-drawn-arrow-2 source,
+.right-drawn-arrow-2 img {
 	position: absolute;
 	top: 96px;
   left: -32px;
