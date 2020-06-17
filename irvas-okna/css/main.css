@@ -1021,7 +1021,7 @@ img.mfp-img {
 }
 /*================ our-services ===============*/
 .stock {
-  background: url(img/bg.png) no-repeat center center;
+  background: url(../img/bg.png) no-repeat center center;
   background-size: cover;
   min-height: 626px;
 }
