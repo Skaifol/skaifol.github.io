@@ -1,0 +1,78 @@
+/*========== mask input ===========*/
+$(document).ready(function () {
+  $("#phone").mask("+7 (999) 999-99-99");
+  $(".phone-2").mask("+7 (999) 999-99-99");
+  $("#phone-3").mask("+7 (999) 999-99-99");
+});
+
+
+  const tabLinks = document.querySelectorAll(".tabs a");
+  const tabPanels = document.querySelectorAll(".tabs-panel");
+
+  for (let el of tabLinks) {
+    el.addEventListener("click", e => {
+      e.preventDefault();
+
+      document.querySelector(".tabs li.active").classList.remove("active");
+      document.querySelector(".tabs-panel.active").classList.remove("active");
+
+      const parentListItem = el.parentElement;
+      parentListItem.classList.add("active");
+      const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
+
+      const panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
+      panel[0].classList.add("active");
+    });
+  }
+
+(function ($) {
+  jQuery.fn.lightTabs = function (options) {
+
+    var createTabs = function () {
+      tabs = this;
+      i = 0;
+
+      showPage = function (i) {
+        $(tabs).children("div").children("div").hide();
+        $(tabs).children("div").children("div").eq(i).show();
+        $(tabs).children("ul").children("li").removeClass("active");
+        $(tabs).children("ul").children("li").eq(i).addClass("active");
+      }
+
+      showPage(0);
+
+      $(tabs).children("ul").children("li").each(function (index, element) {
+        $(element).attr("data-page", i);
+        i++;
+      });
+
+      $(tabs).children("ul").children("li").click(function () {
+        showPage(parseInt($(this).attr("data-page")));
+      });
+    };
+    return this.each(createTabs);
+  };
+})(jQuery);
+$(document).ready(function () {
+  $(".tab").lightTabs();
+});
+
+
+
+$(document).ready(function () {
+
+  $('.mfp-gallery').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    }
+  });
+});
