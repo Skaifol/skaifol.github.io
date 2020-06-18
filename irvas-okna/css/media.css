@@ -971,7 +971,7 @@
  .checked-content {
     justify-content: center;
  }
- .popup, .popup2 {
+ .popup, .popup2, .popup3 {
    overflow: scroll;
  }
  .popup-content {
