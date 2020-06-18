@@ -248,7 +248,7 @@ h2, h3, h4, h5 {
 
 /* =============== main ============= */
 .main {
-  background: url(../img/backgraund-img.png) no-repeat center center;
+  background: url(../img/backgraund-img.jpg) no-repeat center center;
   background-size: cover;
   min-height: calc(100vh - 116px);
 }
