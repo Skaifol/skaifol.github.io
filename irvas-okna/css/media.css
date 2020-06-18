@@ -978,6 +978,9 @@
    position: absolute;
    top: 20%;
  }
+  .popup-content2 {
+    margin-bottom: 50px;
+ }
 /*============= balcony-finishes ================*/
  #balcony-finishes {
     padding-bottom: 100px;
