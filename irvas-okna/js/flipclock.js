@@ -49,7 +49,7 @@ $(document).ready(function () {
     var timeinterval = setInterval(updateClock, 1000);
   }
 
-  var deadline = "May 12 2020 08:45:45 GMT+0300";
+  var deadline = "May 12 2020 20:00:00 GMT+0300";
   initializeClock("countdown", deadline);
 
 });
