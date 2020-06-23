@@ -32,7 +32,7 @@ $(document).ready(function () {
         var nowTime = Date.parse(new Date());
 
         while (newTime <= nowTime) {
-          newTime = newTime + 2 * 48 * 60 * 60 * 1000; // add 24hours
+          newTime = newTime + 2 * 24 * 60 * 60 * 1000; // add 24hours
         }
 
         var deadline = new Date(newTime);
