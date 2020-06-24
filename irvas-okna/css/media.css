@@ -733,6 +733,9 @@
    position: absolute;
    top: 20%;
  }
+ .popup-content2 {
+    margin-bottom: 50px;
+ }
  .popup-form form {
    align-items: center;
  }
