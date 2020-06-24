@@ -57,6 +57,9 @@
    height: auto;
    font-size: 16px;
  }
+  .popup, .popup2, .popup3 {
+    overflow: scroll;
+  }
  .popup-content {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -64,6 +67,7 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     width: 190px;
+   top: 20%;
 }
  .main_content {
     padding-top: 60px;
