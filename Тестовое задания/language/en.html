@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание</title>
+
+  <!-- jQuery 1.8 or later, 33 KB -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Fotorama from CDNJS, 19 KB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/madia.css">
+</head>
+
+<body>
+  <section id="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <img src="../img/logo.svg" alt="logo">
+        </div>
+        <div class="burger_menu">
+          <span></span>
+        </div>
+        <nav class="nav">
+          <ul class="header__list">
+            <li><a href="#">Directions</a></li>
+            <li><a href="#">Help with work</a></li>
+            <li><a href="#">Success stories</a></li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <div class="mail">
+            <a href="mailto:hello@cursor.education">hello@cursor.education</a>
+          </div>
+          <div class="phone">
+            <a href="tel:+380630493115">+38 (063) 049 3115</a>
+          </div>
+        </div>
+        <div class="language">
+          <ul class="language-items">
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown">
+              <label for="dropdown">en</label>
+              <span class="arrow-actiwe"><img src="../img/1.svg" alt="1"></span>
+              <ul>
+                <li><a href="../index.html">ua</a></li>
+                <li><a href="../language/ru.html">ru</a></li>
+              </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="body">
+    <div class="container">
+      <div class="body-content">
+        <div class="body-icon">
+          <a class="fb" href="#">
+            <svg display="none">
+              <symbol id="facebook" viewBox="0 0 14 24" fill="none">
+                <g>
+                  <path
+                    d="M3.76604 9.22969H4.36604V8.62969V5.90643C4.36604 4.2398 4.88957 2.92354 5.76514 2.02683C6.63922 1.13164 7.91709 0.600103 9.53251 0.6C9.53266 0.6 9.53282 0.6 9.53298 0.6L12.5406 0.604818V4.04758L10.5501 4.04829C10.55 4.04829 10.5499 4.04829 10.5499 4.04829C9.77907 4.04832 9.12478 4.19213 8.70111 4.67111C8.29288 5.13263 8.23706 5.7598 8.23706 6.32115V8.62969V9.22969H8.83706H12.3945L12.3931 12.9544H8.83706H8.23706V13.5544V23.4H4.36604V13.5544V12.9544H3.76604H0.740625V9.22969H3.76604ZM12.6506 4.04755H12.6504H12.6506Z"
+                    stroke-width="1.2" />
+                </g>
+              </symbol>
+            </svg>
+            <svg class="fbi">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+          <a class="instagram" href="#">
+            <svg display="none">
+              <symbol id="instagram" viewBox="0 0 23 22" fill="none">
+                <g>
+                  <path
+                    d="M17.45.01c3.025 0 5.5 2.475 5.5 5.5v11c0 3.025-2.475 5.5-5.5 5.5h-11c-3.025 0-5.5-2.475-5.5-5.5v-11c0-3.025 2.475-5.5 5.5-5.5zm4.5 5.5c0-2.475-2.025-4.5-4.5-4.5h-11a4.513 4.513 0 0 0-4.5 4.5v11c0 2.475 2.025 4.5 4.5 4.5h11c2.475 0 4.5-2.025 4.5-4.5z" />
+                  <path fill="none" stroke-miterlimit="20" stroke-width=".2"
+                    d="M17.45.01c3.025 0 5.5 2.475 5.5 5.5v11c0 3.025-2.475 5.5-5.5 5.5h-11c-3.025 0-5.5-2.475-5.5-5.5v-11c0-3.025 2.475-5.5 5.5-5.5zm4.5 5.5c0-2.475-2.025-4.5-4.5-4.5h-11a4.513 4.513 0 0 0-4.5 4.5v11c0 2.475 2.025 4.5 4.5 4.5h11c2.475 0 4.5-2.025 4.5-4.5z" />
+                </g>
+                <g>
+                  <path
+                    d="M17.44 11.01c0 3.025-2.475 5.5-5.5 5.5s-5.5-2.475-5.5-5.5 2.475-5.5 5.5-5.5 5.5 2.475 5.5 5.5zm-1 0c0-2.475-2.025-4.5-4.5-4.5a4.513 4.513 0 0 0-4.5 4.5c0 2.475 2.025 4.5 4.5 4.5s4.5-2.025 4.5-4.5z" />
+                  <path fill="none" stroke-miterlimit="20" stroke-width=".2"
+                    d="M17.44 11.01c0 3.025-2.475 5.5-5.5 5.5s-5.5-2.475-5.5-5.5 2.475-5.5 5.5-5.5 5.5 2.475 5.5 5.5zm-1 0c0-2.475-2.025-4.5-4.5-4.5a4.513 4.513 0 0 0-4.5 4.5c0 2.475 2.025 4.5 4.5 4.5s4.5-2.025 4.5-4.5z" />
+                </g>
+                <g>
+                  <path
+                    d="M20.19 4.51a1.74 1.74 0 0 1-1.75 1.75 1.74 1.74 0 0 1-1.75-1.75c0-.975.775-1.75 1.75-1.75s1.75.775 1.75 1.75zm-1 0a.737.737 0 0 0-.75-.75.737.737 0 0 0-.75.75c0 .425.325.75.75.75s.75-.325.75-.75z" />
+                  <path fill="none" stroke-miterlimit="20" stroke-width=".2"
+                    d="M20.19 4.51a1.74 1.74 0 0 1-1.75 1.75 1.74 1.74 0 0 1-1.75-1.75c0-.975.775-1.75 1.75-1.75s1.75.775 1.75 1.75zm-1 0a.737.737 0 0 0-.75-.75.737.737 0 0 0-.75.75c0 .425.325.75.75.75s.75-.325.75-.75z" />
+                </g>
+              </symbol>
+            </svg>
+            <svg class="insti">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+          <a class="youtube" href="#">
+            <svg display="none">
+              <symbol id="youtube" viewBox="0 0 28 20" fill="none">
+                <g>
+                  <path
+                    d="M17.5992 9.28803C17.7303 9.35517 17.8402 9.45716 17.917 9.58279C17.9938 9.70841 18.0344 9.8528 18.0344 10C18.0344 10.1473 17.9938 10.2917 17.917 10.4173C17.8402 10.5429 17.7303 10.6449 17.5992 10.712L15.0992 12L12.3632 13.404C12.2416 13.4662 12.1061 13.4962 11.9696 13.4911C11.8331 13.486 11.7002 13.4461 11.5835 13.3751C11.4668 13.3042 11.3702 13.2045 11.3029 13.0856C11.2357 12.9667 11.2 12.8326 11.1992 12.696V7.30403C11.1993 7.16711 11.2345 7.0325 11.3015 6.91307C11.3685 6.79365 11.465 6.69342 11.5818 6.62197C11.6986 6.55053 11.8318 6.51025 11.9686 6.50501C12.1054 6.49977 12.2413 6.52973 12.3632 6.59203L15.0992 8.00003L17.5992 9.28803Z"
+                    stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M22.6 1H5.4C2.96995 1 1 2.96995 1 5.4V14.6C1 17.0301 2.96995 19 5.4 19H22.6C25.0301 19 27 17.0301 27 14.6V5.4C27 2.96995 25.0301 1 22.6 1Z"
+                    stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </symbol>
+            </svg>
+            <svg class="yti">
+              <use xlink:href="#youtube"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="body-container">
+          <div class="see-the-review">
+            <h5>watch review</h5>
+            <button class="btn"><img src="../img/btn.svg" alt="button"></button>
+          </div>
+          <div class="body-title">
+            <h1>Cursor</h1>
+          </div>
+          <div class="body-subtitle">
+            <h4>School of programming <br> Effective and informal IT education</h4>
+            <a class="butn" href="#">learn programming <img src="../img/arrow.svg" alt="arrow"></a>
+          </div>
+        </div>
+        <div class="slider slider-2 slider-3">
+          <div class="fotorama" data-transition="slide" data-clicktransition="crossfade" data-nav="thumbs"
+            data-loop="true" data-arrows="always">
+            <img src="../img/2.png">
+            <img src="../img/3.png">
+            <img src="../img/4.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="about_content">
+        <div class="time">
+          <img src="../img/calendar.png" alt="calendar">
+          <div class="about_title">
+            <h3>5 +</h3>
+            <p>years of experience in IT education</p>
+          </div>
+        </div>
+        <div class="satisfied">
+          <img src="../img/graduate.png" alt="graduate">
+          <div class="about_title">
+            <h3>900 +</h3>
+            <p>satisfied graduates</p>
+          </div>
+        </div>
+        <div class="mentors">
+          <img src="../img/mentor.png" alt="mentor">
+          <div class="about_title">
+            <h3>40 +</h3>
+            <p>mentors - practitioners</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="footer_title">
+        <h2>Partners</h2>
+        <h3>Friends</h3>
+      </div>
+      <div class="footer_content">
+        <div class="footer_icon">
+          <div class="icon">
+            <div class="iconBx iconBx_top"><img src="../img/google.png" alt="google"></div>
+            <div class="iconBx iconBx_top"><img src="../img/appel.png" alt="appel"></div>
+            <div class="iconBx iconBx_top"><img src="../img/m.png" alt="m"></div>
+            <div class="iconBx iconBx_top"><img src="../img/enguide.png" alt="enguide"></div>
+            <div class="iconBx iconBx_bottom"><img src="../img/enguide.png" alt="enguide"></div>
+            <div class="iconBx iconBx_bottom"><img src="../img/lingva.png" alt="lingva"></div>
+            <div class="iconBx iconBx_bottom"><img src="../img/es.png" alt="es"></div>
+            <div class="iconBx iconBx_bottom"><img src="../img/ralabs.png" alt="ralabs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
