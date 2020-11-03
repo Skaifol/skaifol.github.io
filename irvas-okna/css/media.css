@@ -57,15 +57,9 @@
    height: auto;
    font-size: 16px;
  }
-  .popup, .popup2, .popup3 {
-    overflow: scroll;
-  }
  .popup-content {
     width: 190px;
    top: 20%;
-}
-.popup-content2 {
-    margin-bottom: 50px;
 }
  .main_content {
     padding-top: 60px;
