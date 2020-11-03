@@ -4,6 +4,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 h2, h3, h4, h5 {
   color: #333333;
 }
