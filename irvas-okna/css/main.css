@@ -141,9 +141,6 @@ h2, h3, h4, h5 {
   height: 100%;
   z-index: 9;
   background-color: rgba(0, 155, 255, 0.58);
-  
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .popup-dialog {
@@ -170,15 +167,8 @@ h2, h3, h4, h5 {
 .popup-content {
   position: relative;
   text-align: center;
-/*   left: 50%;
-  top: 10%; */
   border-radius: 10px;
   background-color: #ffffff;
-/*   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%); */
   padding: 40px 50px;
 }
 
