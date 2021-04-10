@@ -154,6 +154,11 @@ h2, h3, h4, h5 {
   padding: 0 15px;
 }
 
+.popup-content.popup-content2 {
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
 .popup-close {
   position: absolute;
   top: -53px;
