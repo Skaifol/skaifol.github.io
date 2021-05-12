@@ -6,11 +6,11 @@ $(document).scroll(function () {
   if (scrollTop >= 5) {
     $('.header__top, .header__button>a, .header__menu, .header__logo').addClass("scrol");
     $("div.header__logo").empty();
-    $("div.header__logo").append('<img src="../img/scroll-logo.png"/>');
+    $("div.header__logo").append('<img src="img/scroll-logo.png"/>');
   }else {
     $('.header__top, .header__button>a, .header__menu, .header__logo').removeClass("scrol");
     $("div.header__logo").empty();
-    $("div.header__logo").append('<img src="../img/logo.png"/>');
+    $("div.header__logo").append('<img src="img/logo.png"/>');
   }
 });
 
