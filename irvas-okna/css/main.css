@@ -133,6 +133,8 @@ h2, h3, h4, h5 {
 .popup3 {
   display: none;
   position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
   left: 0;
   top: 0;
   bottom: 0;
@@ -148,7 +150,12 @@ h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 15px;
+  padding: 0 15px;
+}
+
+.popup-content.popup-content2 {
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .popup-close {

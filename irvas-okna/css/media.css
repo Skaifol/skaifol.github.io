@@ -709,12 +709,6 @@
  .phone_content a {
     margin-top: 10px;
  }
- .popup, .popup2 {
-   overflow: scroll;
- }
- .popup-content2 {
-    margin-bottom: 50px;
- }
  .popup-form form {
    align-items: center;
  }
