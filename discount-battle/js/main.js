@@ -15,7 +15,7 @@ $(document).scroll(function () {
 });
 
 $(document).ready(function () {
-  $('.parallax__list>li').addClass('layer');
+  // $('.parallax__list>li').addClass('layer');
   $('.parallax__list').parallax();
   $(window).width(function () {
     if ($(window).width() < 769) {
@@ -69,7 +69,7 @@ if (animItems.length > 0) {
             lineWidth: 6,
             lineCap: 'circle'
           });
-        });    
+        });
       } else {
         animItem.classList.remove('active');
       }
@@ -83,3 +83,12 @@ if (animItems.length > 0) {
   }
   animOnScroll();
 }
+
+const mapIcon = new Vivus(
+  'map',
+  {
+    type: 'oneByOne',
+    duration: 300,
+    animTimingFunction: Vivus.EASE
+  }
+);

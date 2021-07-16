@@ -386,43 +386,10 @@ a {
     }
     // .header__wrapp-subtitle
     &__wrapp-subtitle {
-      position: relative;
-      &::after {
-        display: block;
-        content: '';
-        position: absolute;
-        width: calc(133px + 69 * ((100vw - 320px) / (1190 - 320)));
-        height: calc(36px + 12 * ((100vw - 320px) / (1190 - 320)));
-        background-color: #000000;
-        opacity: 0.2;
-        top: 4px;
-        margin-left: 4px;
-        left: 50%;
-        transform: translateX(-50%) rotate(-2deg);
-        -webkit-transform: translateX(-50%) rotate(-2deg);
-        -moz-transform: translateX(-50%) rotate(-2deg);
-        -ms-transform: translateX(-50%) rotate(-2deg);
-        -o-transform: translateX(-50%) rotate(-2deg);
-        z-index: 1;
-      }
+      margin-top: 13px;
     }
 		// .header__subtitle
 		&__subtitle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      background-color: #008aff;
-      width: calc(133px + 69 * ((100vw - 320px) / (1190 - 320)));
-      height: calc(36px + 12 * ((100vw - 320px) / (1190 - 320)));
-      transform: rotate(-2deg);
-      -webkit-transform: rotate(-2deg);
-      -moz-transform: rotate(-2deg);
-      -ms-transform: rotate(-2deg);
-      -o-transform: rotate(-2deg);
-      margin: 0 auto;
-      margin-top: 13px;
-      z-index: 2;
       p {
         color: #ffffff;
         font-family: $GoProMedium;
@@ -448,6 +415,29 @@ a {
     &__button-bottom {
       margin-top: 46px;
     }
+}
+
+// .wrapper__text
+.wrapper__text {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  
+}
+
+.text {
+  position: relative;
+  background-color: #008aff;
+  padding: 11px;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  box-shadow: 4px 4px 0px 1px rgba(0, 0, 0, .2);
 }
 
 .process {
@@ -534,8 +524,15 @@ a {
       font-weight: 500;
       letter-spacing: 0.38px;
       color: #000000;
-      text-decoration: underline;
       margin-top: 21px;
+      transition: all .3s ease ;
+      -webkit-transition: all .3s ease ;
+      -moz-transition: all .3s ease ;
+      -ms-transition: all .3s ease ;
+      -o-transition: all .3s ease ;
+      &:hover {
+        text-decoration: underline;
+      }
 		}
 		// .card__clip-before
 		&__clip-before::before {
@@ -686,9 +683,11 @@ a {
 
 .event {
   position: relative;
+  padding-bottom: 122px;
 		// .event__backgraund
 		&__background {
-      position: relative;
+      position: absolute;
+      width: 100%;
       height: calc(60px + 366 * ((100vw - 320px) / (1920 - 320)));
       z-index: 1;
       background: #ffd426;
@@ -703,8 +702,57 @@ a {
         max-width: 100%;
       }
 		}
+		&__text {
+      font-family: $GoProLight;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.56;
+      letter-spacing: 0.4px;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+      z-index: 3;
+      padding-top: 70px;
+		}
+		// .event__wrapp-subtitle
+		&__wrapp-subtitle {
+      margin-top: 22px;
+      .text {
+        width: calc(200px + 90 * ((100vw - 320px) / (1190 - 320)));
+      }
+      &::after {
+        width: calc(200px + 90 * ((100vw - 320px) / (1190 - 320)));
+      }
+		}
+		// .event__subtitle
+		&__subtitle {
+      p {
+        font-family: $GoProBold;
+        font-size: calc(14px + 7 * ((100vw - 320px) / (1190 - 320)));
+        font-weight: bold;
+        letter-spacing: 0.53px;
+        text-align: center;
+        color: #ffffff;
+      }
+		}
+		// .event__big-text
+		&__big-text {
+      position: relative;
+      margin-top: 24px;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+      font-family: $GoProBlack;
+      font-size: 60px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-align: center;
+      color: #ffffff;
+      z-index: 3;
+		}
     &__parallax {
-      margin-top: -494px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      // margin-top: -196px;
       z-index: 2;
       min-height: 100vh;
       img {
@@ -964,5 +1012,122 @@ a {
           height: 17px;
         }
       }
+      &-32 {
+        position: absolute;
+        top: 858px;
+        left: 232px;
+        img {
+          width: 32px;
+          height: 17px;
+        }
+      }
+      &-33 {
+        position: absolute;
+        top: 1048px;
+        left: 630px;
+        img {
+          width: 41px;
+          height: 22px;
+        }
+      }
+      &-34 {
+        position: absolute;
+        top: 1019px;
+        right: 501px;
+        img {
+          width: 32px;
+          height: 17px;
+        }
+      }
+      &-35 {
+        position: absolute;
+        top: 1140px;
+        left: 400px;
+        img {
+          width: 43px;
+          height: 31px;
+        }
+      }
+      &-36 {
+        position: absolute;
+        top: 1241px;
+        right: 657px;
+        img {
+          width: 43px;
+          height: 31px;
+        }
+      }
+      &-37 {
+        position: absolute;
+        top: 1336px;
+        left: 544px;
+        img {
+          width: 32px;
+          height: 17px;
+        }
+      }
+    }
+		// .event__guidebook
+		&__guidebook {
+      position: relative;
+      z-index: 2;
+      margin-top: 305px;
+		}
+		// .event__guidebook-right
+		&__guidebook-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: left;
+		}
+		// .event__guidebook-title
+		&__guidebook-title {
+      font-family: $GoProBold;
+      font-size: 30px;
+      letter-spacing: 0.75px;
+      color: #000000;
+		}
+		// .event__guidebook-description
+		&__guidebook-description {
+      font-family: $GoProLight;
+      margin-top: 35px;
+      font-size: 17px;
+      line-height: 1.41;
+      color: #000000;
+      width: 510px;
+		}
+		// .event__guidebook-left
+		&__guidebook-left {
+      justify-content: flex-start;
+		}
+		// .event__guidebook-center
+		&__guidebook-center {
+      justify-content: center;
+		}
+    // .event__guidebook-map
+		&__guidebook-map {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+		}
+		// .event__guidebook-marker
+		&__guidebook-marker {
+      position: absolute;
+      &.marker-blue {
+        left: 41.5%;
+        top: -96px;
+      }
+      &.marker-grin {
+        right: 28.8%;
+        top: 143px;
+      }
+      &.marker-red {
+        bottom: 42px;
+        right: 41%;;
+      }
+		}
+    #map {
+      width: 725px;
+      height: 574px;
     }
   }
