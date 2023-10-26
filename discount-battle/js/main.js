@@ -15,7 +15,7 @@ $(document).scroll(function () {
 });
 
 $(document).ready(function () {
-  // $('.parallax__list>li').addClass('layer');
+  $('.parallax__list>li').addClass('layer');
   $('.parallax__list').parallax();
   $(window).width(function () {
     if ($(window).width() < 769) {
